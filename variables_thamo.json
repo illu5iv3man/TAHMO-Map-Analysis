@@ -1,0 +1,173 @@
+{
+  "Variables": {
+    "P": {
+      "Name": "Precipitation",
+      "Code": "P",
+      "Description": "Precipitation",
+      "UnitCode": "mm",
+      "State": 1
+    },
+    "WindDirection": {
+      "Name": "Wind Direction",
+      "Code": "WindDirection",
+      "Description": "Wind Direction (from which blowing)",
+      "UnitCode": "deg",
+      "State": 1
+    },
+    "WindSpeed": {
+      "Name": "Wind Speed",
+      "Code": "WindSpeed",
+      "Description": "Wind Speed at surface",
+      "UnitCode": "m/s",
+      "State": 1
+    },
+    "WindGusts": {
+      "Name": "Wind gusts",
+      "Code": "WindGusts",
+      "UnitCode": "m/s",
+      "State": 1
+    },
+    "VaporPressure": {
+      "Name": "Vapor Pressure",
+      "Code": "VaporPressure",
+      "UnitCode": "kPa",
+      "State": 1
+    },
+    "TMP": {
+      "Name": "Temperature",
+      "Code": "TMP",
+      "Description": "Temperature 2m above ground",
+      "UnitCode": "⁰C",
+      "State": 1
+    },
+    "RH": {
+      "Name": "Relative Humidity",
+      "Code": "RH",
+      "Description": "Relative Humidity 2m above ground",
+      "UnitCode": "%",
+      "State": 1
+    },
+    "AZP": {
+      "Name": "Average Pressure",
+      "Code": "AZP",
+      "UnitCode": "None",
+      "State": 1
+    },
+    "SoilMoisture": {
+      "Name": "Soil Moisture",
+      "Code": "SoilMoisture",
+      "UnitCode": "m3/m3",
+      "State": 1
+    },
+    "Temperature.Soil": {
+      "Name": "Soil temperature",
+      "Code": "Temperature.Soil",
+      "UnitCode": "⁰C",
+      "State": 1
+    },
+    "Radiation": {
+      "Name": "Radiation",
+      "Code": "Radiation",
+      "UnitCode": "w/m2",
+      "State": 1
+    },
+    "Waterlevel": {
+      "Name": "Waterlevel",
+      "Code": "Waterlevel",
+      "UnitCode": "m NAP",
+      "State": 1
+    },
+    "WaterVelocity": {
+      "Name": "Water velocity",
+      "Code": "WaterVelocity",
+      "UnitCode": "m/s",
+      "State": 1
+    },
+    "Q": {
+      "Name": "Discharge",
+      "Code": "Q",
+      "UnitCode": "m3/s",
+      "State": 1
+    },
+    "SoilMoisture.5cm": {
+      "Name": "Soil Moisture",
+      "Code": "SoilMoisture.5cm",
+      "UnitCode": "m3/m3",
+      "State": 1
+    },
+    "SoilMoisture.10cm": {
+      "Name": "Soil Moisture",
+      "Code": "SoilMoisture.10cm",
+      "UnitCode": "m3/m3",
+      "State": 1
+    },
+    "SoilMoisture.20cm": {
+      "Name": "Soil Moisture",
+      "Code": "SoilMoisture.20cm",
+      "UnitCode": "m3/m3",
+      "State": 1
+    },
+    "SoilMoisture.30cm": {
+      "Name": "Soil Moisture",
+      "Code": "SoilMoisture.30cm",
+      "UnitCode": "m3/m3",
+      "State": 1
+    },
+    "SoilMoisture.50cm": {
+      "Name": "Soil Moisture",
+      "Code": "SoilMoisture.50cm",
+      "UnitCode": "m3/m3",
+      "State": 1
+    }
+  },
+  "Units": {
+    "mm": {
+      "Name": "mm",
+      "Code": "mm"
+    },
+    "deg": {
+      "Name": "degrees",
+      "Code": "deg",
+      "ParentUnit": {
+        "Name": "degrees",
+        "Code": "degrees"
+      }
+    },
+    "m/s": {
+      "Name": "m/s",
+      "Code": "m/s"
+    },
+    "kPa": {
+      "Name": "kPa",
+      "Code": "kPa"
+    },
+    "⁰C": {
+      "Name": "⁰C",
+      "Code": "⁰C"
+    },
+    "%": {
+      "Name": "%",
+      "Code": "%"
+    },
+    "None": {
+      "Name": "None",
+      "Code": "None"
+    },
+    "m3/m3": {
+      "Name": "m3/m3",
+      "Code": "m3/m3"
+    },
+    "w/m2": {
+      "Name": "W/m2",
+      "Code": "w/m2"
+    },
+    "m NAP": {
+      "Name": "m NAP",
+      "Code": "m NAP"
+    },
+    "m3/s": {
+      "Name": "m3/s",
+      "Code": "m3/s"
+    }
+  }
+}

@@ -1,0 +1,1531 @@
+{
+  "DataSources": {
+    "Rain4Africa.SouthernAfrica.UnifiedModel.Deterministic.4km": {
+      "Name": "UM DET 3d 4km 1h SADC",
+      "Code": "Rain4Africa.SouthernAfrica.UnifiedModel.Deterministic.4km",
+      "Settings": {
+        "ChunkSizeX": 10,
+        "ChunkSizeY": 10,
+        "ChunkSizeTime": 1,
+        "ChunkSizeModels": 1,
+        "Compression": true,
+        "DeflateLevel": 5,
+        "StoreInterval": "Days",
+        "FileFormatId": 3,
+        "SplitByVariable": true,
+        "SplitByEnsemble": false,
+        "SplitByModelTimeStep": false,
+        "SplitByLocation": false,
+        "SplitByUnit": false,
+        "FileDateOffSetInMinutes": 0,
+        "Grid": {
+          "GridDefinitionId": 27,
+          "Pyramid": {
+            "MaxPixelCount": 80000,
+            "PreferredPixelCount": 80000,
+            "Interpolation": "Average"
+          }
+        },
+        "AccumulationInterval": "Total",
+        "Disclaimer": null,
+        "Time": {
+          "Interval": {
+            "Type": "Hours",
+            "Value": 1.0
+          }
+        },
+        "Model": {
+          "Interval": {
+            "Type": "Hours",
+            "Value": 12.0
+          },
+          "TimeStepCount": 73,
+          "StartDateOffsetMinutes": -60
+        },
+        "MaximumDelay": {
+          "Type": "Days",
+          "Value": 4
+        }
+      },
+      "StartDate": "20220708120000",
+      "EndDate": "20220729000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "ModelGrid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Saws.Unified",
+      "LogCollectionId": 46
+    },
+    "HydroNet.ShapeFiles": {
+      "Name": "HydroNET Shape Files",
+      "Description": "Spatiallayers",
+      "Code": "HydroNet.ShapeFiles",
+      "Settings": {
+        "SpatialLayer": {
+          "VectorLayer": {}
+        }
+      },
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "SpatialLayer",
+      "DataProviderAssemblyId": 21,
+      "DataSourceGroupCode": "HydroNet.ShapeFiles",
+      "LogCollectionId": 52
+    },
+    "Rain4Africa.SouthAfrica.Evapotranspiration.4km": {
+      "Name": "UM DET 3d 4km 1h SADC - Evapotranspiration",
+      "Code": "Rain4Africa.SouthAfrica.Evapotranspiration.4km",
+      "Settings": {
+        "ChunkSizeX": 10,
+        "ChunkSizeY": 10,
+        "ChunkSizeTime": 1,
+        "ChunkSizeModels": 1,
+        "Compression": true,
+        "DeflateLevel": 5,
+        "StoreInterval": "Days",
+        "FileFormatId": 3,
+        "SplitByVariable": true,
+        "SplitByEnsemble": false,
+        "SplitByModelTimeStep": false,
+        "SplitByLocation": false,
+        "SplitByUnit": false,
+        "FileDateOffSetInMinutes": 0,
+        "Grid": {
+          "GridDefinitionId": 23,
+          "Pyramid": {
+            "MaxPixelCount": 80000,
+            "PreferredPixelCount": 80000,
+            "Interpolation": "Average"
+          }
+        },
+        "Disclaimer": null,
+        "Model": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          },
+          "TimeStepCount": 71,
+          "StartDateOffsetMinutes": 0
+        },
+        "Time": {
+          "Interval": {
+            "Type": "Hours",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "Days",
+          "Value": 4
+        }
+      },
+      "StartDate": "20220721000000",
+      "EndDate": "20220729000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "ModelGrid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Saws.Unified",
+      "LogCollectionId": 56
+    },
+    "Noaa.Gfs": {
+      "Name": "GFS 3-Hourly",
+      "Description": "NOAA GFS model with 3-hourly timesteps",
+      "Code": "Noaa.Gfs",
+      "Settings": {
+        "ChunkSizeX": 10,
+        "ChunkSizeY": 10,
+        "ChunkSizeTime": 1,
+        "ChunkSizeModels": 1,
+        "Compression": true,
+        "SplitByVariable": true,
+        "Grid": {
+          "GridDefinitionId": 32,
+          "Pyramid": {
+            "MaxPixelCount": 300000,
+            "PreferredPixelCount": 300000,
+            "Interpolation": "Median"
+          }
+        },
+        "Model": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          },
+          "TimeStepCount": 81,
+          "StartDateOffsetMinutes": -180
+        },
+        "StoreInterval": "Days",
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Hours",
+            "Value": 3.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "Hours",
+          "Value": 36
+        }
+      },
+      "StartDate": "20220725000000",
+      "EndDate": "20220729000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": true,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "ModelGrid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Noaa",
+      "LogCollectionId": 63
+    },
+    "Noaa.Gfs.1h": {
+      "Name": "GFS Hourly",
+      "Description": "NOAA GFS model with Hourly timesteps",
+      "Code": "Noaa.Gfs.1h",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "ChunkSizeModels": 1,
+        "Compression": true,
+        "SplitByVariable": true,
+        "AccumulationInterval": "None",
+        "Grid": {
+          "GridDefinitionId": 32
+        },
+        "Model": {
+          "Interval": {
+            "Type": "Hours",
+            "Value": 6.0
+          },
+          "TimeStepCount": 121,
+          "StartDateOffsetMinutes": 0
+        },
+        "StoreInterval": "Hours",
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Hours",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "Days",
+          "Value": 2.0
+        }
+      },
+      "StartDate": "20220726010000",
+      "EndDate": "20220729120000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "ModelGrid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Noaa",
+      "LogCollectionId": 65
+    },
+    "Saws.Stations.5": {
+      "Name": "Saws 5 Min Stations",
+      "Code": "Saws.Stations.5",
+      "Settings": {
+        "Time": {
+          "Interval": {
+            "Type": "None",
+            "Value": 0
+          }
+        },
+        "DataSourceCodes": [
+          "Saws.Stations.5"
+        ],
+        "MaximumDelay": {
+          "Type": "Days",
+          "Value": 9
+        },
+        "OverwriteMode": "NewIsAvailable"
+      },
+      "StartDate": "20190403220000",
+      "EndDate": "20220726215500",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "TimeSeries",
+      "DataProviderAssemblyId": 28,
+      "DataSourceGroupCode": "Saws.Timeseries",
+      "DefaultNoDataValue": -999.0,
+      "LogCollectionId": 114
+    },
+    "Saws.Stations.Aws": {
+      "Name": "Saws AWS Hourly Stations",
+      "Code": "Saws.Stations.Aws",
+      "Settings": {
+        "Time": {
+          "Interval": {
+            "Type": "None",
+            "Value": 0
+          }
+        },
+        "DataSourceCodes": [
+          "Saws.Stations.Aws"
+        ],
+        "MaximumDelay": {
+          "Type": "Days",
+          "Value": 3
+        },
+        "OverwriteMode": "NewIsAvailable"
+      },
+      "StartDate": "20180215090000",
+      "EndDate": "20220729170000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "TimeSeries",
+      "DataProviderAssemblyId": 28,
+      "DataSourceGroupCode": "Saws.Timeseries",
+      "DefaultNoDataValue": -999.0,
+      "LogCollectionId": 116
+    },
+    "Twiga.MapYourCrop.Catandica": {
+      "Name": "TWIGA MapYourCrop Catandica",
+      "Code": "Twiga.MapYourCrop.Catandica",
+      "Settings": {
+        "ChunkSizeX": 50,
+        "ChunkSizeY": 50,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "StoreInterval": "Days",
+        "AccumulationInterval": "None",
+        "Grid": {
+          "GridDefinitionId": 124
+        },
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20200116000100",
+      "EndDate": "20200117000100",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Twiga.MapYourCrop",
+      "LogCollectionId": 222
+    },
+    "Twiga.MapYourCrop.Tica": {
+      "Name": "TWIGA MapYourCrop Tica",
+      "Code": "Twiga.MapYourCrop.Tica",
+      "Settings": {
+        "ChunkSizeX": 50,
+        "ChunkSizeY": 50,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "StoreInterval": "Days",
+        "AccumulationInterval": "None",
+        "Grid": {
+          "GridDefinitionId": 125
+        },
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20190113000100",
+      "EndDate": "20190114000100",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Twiga.MapYourCrop",
+      "LogCollectionId": 223
+    },
+    "Twiga.VegMon": {
+      "Name": "TWIGA Vegmon Data",
+      "Code": "Twiga.VegMon",
+      "Settings": {
+        "Time": {
+          "Interval": {
+            "Type": "None",
+            "Value": 0
+          }
+        },
+        "ChunkSizeMinutes": 1440,
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20170601070100",
+      "EndDate": "20201211111718",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "TimeSeries",
+      "DataProviderAssemblyId": 28,
+      "DataSourceGroupCode": "Twiga.Vegmon",
+      "LogCollectionId": 224
+    },
+    "Twiga.Heatstress.Forecast": {
+      "Name": "TWIGA Heat Stress Forecast",
+      "Code": "Twiga.Heatstress.Forecast",
+      "Settings": {
+        "ChunkSizeX": 40,
+        "ChunkSizeY": 40,
+        "ChunkSizeTime": 1,
+        "ChunkSizeModels": 1,
+        "Compression": true,
+        "DeflateLevel": 5,
+        "StoreInterval": "Days",
+        "FileFormatId": 3,
+        "SplitByVariable": true,
+        "SplitByEnsemble": false,
+        "SplitByModelTimeStep": false,
+        "SplitByLocation": false,
+        "SplitByUnit": false,
+        "FileDateOffSetInMinutes": 0,
+        "Grid": {
+          "GridDefinitionId": 27,
+          "Pyramid": {
+            "MaxPixelCount": 80000,
+            "PreferredPixelCount": 80000,
+            "Interpolation": "Average"
+          }
+        },
+        "AccumulationInterval": "None",
+        "Disclaimer": null,
+        "Time": {
+          "Interval": {
+            "Type": "Hours",
+            "Value": 1.0
+          }
+        },
+        "Model": {
+          "Interval": {
+            "Type": "Hours",
+            "Value": 12.0
+          },
+          "TimeStepCount": 72,
+          "StartDateOffsetMinutes": 0
+        },
+        "MaximumDelay": {
+          "Type": "Days",
+          "Value": 70
+        }
+      },
+      "StartDate": "20220626120000",
+      "EndDate": "20220728000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "ModelGrid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Saws.Unified",
+      "LogCollectionId": 225
+    },
+    "Twiga.MapYourCrop.Mozambique.Cebola": {
+      "Name": "TWIGA MapYourCrop Mozambique Barue Cebola",
+      "Description": "TWIGA, configured by MAL",
+      "Code": "Twiga.MapYourCrop.Mozambique.Cebola",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "StoreInterval": "Days",
+        "AccumulationInterval": "None",
+        "Grid": {
+          "GridDefinitionId": 136
+        },
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20201007000000",
+      "EndDate": "20201008000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Twiga.MapYourCrop.Mozambique",
+      "LogCollectionId": 226
+    },
+    "Tahmo.Stations.Data.Distribution.Hourly": {
+      "Name": "TAHMO stations via data distribution (Hourly)",
+      "Code": "Tahmo.Stations.Data.Distribution.Hourly",
+      "Settings": {
+        "StoreInterval": "Undefined",
+        "FileFormatId": 0,
+        "FixedFileFormat": null,
+        "FixedFolderFormat": null,
+        "SplitByVariable": false,
+        "SplitByEnsemble": false,
+        "SplitByModelTimeStep": false,
+        "SplitByLocation": false,
+        "SplitByUnit": false,
+        "FileDateOffSetInMinutes": 0,
+        "Time": {
+          "Interval": {
+            "Type": "None",
+            "Value": 0
+          }
+        },
+        "AccumulationInterval": "Total",
+        "MaximumDelay": {
+          "Type": "Days",
+          "Value": 2
+        },
+        "Disclaimer": null,
+        "InstanceDataSourceCode": "TAHMO.Hourly",
+        "MaxPeriod": {
+          "Type": "Days",
+          "Value": 180
+        },
+        "RequestIntervalInMilliseconds": 10
+      },
+      "StartDate": "20120628000000",
+      "EndDate": "20220729180729",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "TimeSeries",
+      "DataProviderAssemblyId": 71,
+      "DataSourceGroupCode": "Tahmo.Stations",
+      "DefaultNoDataValue": -9999.0,
+      "LogCollectionId": 264
+    },
+    "Gnss.Stations": {
+      "Name": "TWIGA GNSS Water Vapor Monitoring",
+      "Description": "GNSS time-series data",
+      "Code": "Gnss.Stations",
+      "Settings": {
+        "Time": {
+          "Interval": {
+            "Type": "None",
+            "Value": 0
+          }
+        },
+        "ChunkSizeMinutes": 60,
+        "MaximumDelay": {
+          "Type": "Years",
+          "Value": 1.0
+        }
+      },
+      "StartDate": "20190924235941",
+      "EndDate": "20220729161442",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "TimeSeries",
+      "DataProviderAssemblyId": 28,
+      "DataSourceGroupCode": "Gnss.Stations",
+      "LogCollectionId": 267
+    },
+    "Saws.Satellite": {
+      "Name": "SAWS Satellite",
+      "Description": "SAWS Satellite product, primarily used in TWIGA",
+      "Code": "Saws.Satellite",
+      "Settings": {
+        "ChunkSizeX": 10,
+        "ChunkSizeY": 10,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "StoreInterval": "Days",
+        "Grid": {
+          "GridDefinitionId": 60
+        },
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Hours",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "Days",
+          "Value": 4.0
+        }
+      },
+      "StartDate": "20190922000000",
+      "EndDate": "20220729170000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Saws.Satellite",
+      "LogCollectionId": 268
+    },
+    "TWIGA.Dam.Waterbalance": {
+      "Name": "Dam Waterbalance",
+      "Description": "TWIGA Dam Waterbalance (configured by MAL)",
+      "Code": "TWIGA.Dam.Waterbalance",
+      "Settings": {
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          }
+        },
+        "DataSourceCodes": [
+          "Dam.Waterbalance"
+        ],
+        "MaximumDelay": {
+          "Type": "Days",
+          "Value": 21.0
+        }
+      },
+      "StartDate": "20180131000000",
+      "EndDate": "20220728000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": true,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "TimeSeries",
+      "DataProviderAssemblyId": 28,
+      "DataSourceGroupCode": "Dam.Waterbalance",
+      "LogCollectionId": 269
+    },
+    "Distro.Stations": {
+      "Name": "Strathmore Data Distribution",
+      "Code": "Distro.Stations",
+      "Settings": {
+        "StoreInterval": "Undefined",
+        "FileFormatId": 0,
+        "FixedFileFormat": null,
+        "FixedFolderFormat": null,
+        "SplitByVariable": false,
+        "SplitByEnsemble": false,
+        "SplitByModelTimeStep": false,
+        "SplitByLocation": false,
+        "SplitByUnit": false,
+        "FileDateOffSetInMinutes": 0,
+        "Time": {
+          "Interval": {
+            "Type": "None",
+            "Value": 0
+          }
+        },
+        "AccumulationInterval": "None",
+        "MaximumDelay": {
+          "Type": "Days",
+          "Value": 90
+        },
+        "Disclaimer": null,
+        "InstanceDataSourceCode": "Distro.Stations",
+        "MaxPeriod": {
+          "Type": "Days",
+          "Value": 180
+        },
+        "RequestIntervalInMilliseconds": 10
+      },
+      "StartDate": "20191007190956",
+      "EndDate": "20220718232930",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0300",
+      "PrimaryStructureType": "TimeSeries",
+      "DataProviderAssemblyId": 71,
+      "DataSourceGroupCode": "Distro.Stations",
+      "LogCollectionId": 420
+    },
+    "Twiga.MapYourCrop.Mozambique.Modesto": {
+      "Name": "TWIGA MapYourCrop Mozambique Barue Modesto",
+      "Description": "TWIGA, configured by MAL",
+      "Code": "Twiga.MapYourCrop.Mozambique.Modesto",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "StoreInterval": "Days",
+        "AccumulationInterval": "None",
+        "Grid": {
+          "GridDefinitionId": 140
+        },
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20201006000000",
+      "EndDate": "20201007000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Twiga.MapYourCrop.Mozambique",
+      "LogCollectionId": 438
+    },
+    "Twiga.MapYourCrop.Mozambique.Naume": {
+      "Name": "TWIGA MapYourCrop Mozambique Barue Naume",
+      "Description": "TWIGA, configured by MAL",
+      "Code": "Twiga.MapYourCrop.Mozambique.Naume",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "StoreInterval": "Days",
+        "AccumulationInterval": "None",
+        "Grid": {
+          "GridDefinitionId": 139
+        },
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20201006000000",
+      "EndDate": "20201007000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Twiga.MapYourCrop.Mozambique",
+      "LogCollectionId": 439
+    },
+    "Twiga.MapYourCrop.Mozambique.Ananias": {
+      "Name": "TWIGA MapYourCrop Mozambique Barue Ananias",
+      "Description": "TWIGA, configured by MAL",
+      "Code": "Twiga.MapYourCrop.Mozambique.Ananias",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "StoreInterval": "Days",
+        "AccumulationInterval": "None",
+        "Grid": {
+          "GridDefinitionId": 138
+        },
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20201007000000",
+      "EndDate": "20201008000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Twiga.MapYourCrop.Mozambique",
+      "LogCollectionId": 440
+    },
+    "Twiga.MapYourCrop.Mozambique.Saunhama": {
+      "Name": "TWIGA MapYourCrop Mozambique Barue Saumhama",
+      "Description": "TWIGA, configured by MAL",
+      "Code": "Twiga.MapYourCrop.Mozambique.Saunhama",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "StoreInterval": "Days",
+        "AccumulationInterval": "None",
+        "Grid": {
+          "GridDefinitionId": 137
+        },
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20201007000000",
+      "EndDate": "20201008000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Twiga.MapYourCrop.Mozambique",
+      "LogCollectionId": 441
+    },
+    "Twiga.MapYourCrop.Mozambique.TimeSeries": {
+      "Name": "TWIGA MapYourCrop Mozambique Time-Series",
+      "Description": "TWIGA, configured by MAL",
+      "Code": "Twiga.MapYourCrop.Mozambique.TimeSeries",
+      "Settings": {
+        "Time": {
+          "Interval": {
+            "Type": "None",
+            "Value": 0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20201001013200",
+      "EndDate": "20201007081600",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "TimeSeries",
+      "DataProviderAssemblyId": 28,
+      "DataSourceGroupCode": "Myc.TimeSeries",
+      "LogCollectionId": 442
+    },
+    "TWIGA.Starlab.SoilMoisture": {
+      "Name": "TWIGA Tamale Soil Moisture",
+      "Description": "TWIGA Soil Moisture",
+      "Code": "TWIGA.Starlab.SoilMoisture",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "ChunkSizeModels": 1,
+        "StoreInterval": "Days",
+        "SplitByVariable": true,
+        "Compression": true,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 6
+          }
+        },
+        "Grid": {
+          "GridDefinitionId": 152
+        },
+        "FileFormatId": 3,
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0
+        }
+      },
+      "StartDate": "20190329181800",
+      "EndDate": "20190727181800",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Twiga.Starlab.SoilMoisture",
+      "LogCollectionId": 481
+    },
+    "Twiga.Icon.D2": {
+      "Name": "TWIGA DWD ICON-D2 Africa",
+      "Code": "Twiga.Icon.D2",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "ChunkSizeModels": 1,
+        "Compression": true,
+        "DeflateLevel": 5,
+        "StoreInterval": "Days",
+        "FileFormatId": 3,
+        "SplitByVariable": true,
+        "SplitByEnsemble": false,
+        "SplitByModelTimeStep": false,
+        "SplitByLocation": false,
+        "SplitByUnit": false,
+        "FileDateOffSetInMinutes": 0,
+        "Grid": {
+          "GridDefinitionId": 166
+        },
+        "AccumulationInterval": "None",
+        "Disclaimer": null,
+        "Time": {
+          "Interval": {
+            "Type": "Hours",
+            "Value": 1.0
+          }
+        },
+        "Model": {
+          "Interval": {
+            "Type": "Hours",
+            "Value": 24.0
+          },
+          "TimeStepCount": 78,
+          "StartDateOffsetMinutes": 0
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0
+        }
+      },
+      "StartDate": "20220720000000",
+      "EndDate": "20220728000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "ModelGrid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Icon.Africa",
+      "LogCollectionId": 485
+    },
+    "InfoSequia.Inkomati.SPI": {
+      "Name": "InfoSequia Inkomati – SPI",
+      "Code": "InfoSequia.Inkomati.SPI",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": false,
+        "StoreInterval": "Months",
+        "AccumulationInterval": "None",
+        "Grid": {
+          "GridDefinitionId": 170
+        },
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20200104000000",
+      "EndDate": "20220525000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "InfoSequia.Inkomati",
+      "LogCollectionId": 495
+    },
+    "InfoSequia.Inkomati.SPEI": {
+      "Name": "InfoSequia Inkomati – SPEI",
+      "Code": "InfoSequia.Inkomati.SPEI",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": false,
+        "StoreInterval": "Months",
+        "AccumulationInterval": "None",
+        "Grid": {
+          "GridDefinitionId": 170
+        },
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20200104000000",
+      "EndDate": "20220525000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "InfoSequia.Inkomati",
+      "LogCollectionId": 495
+    },
+    "InfoSequia.Inkomati.PPERC": {
+      "Name": "InfoSequia Inkomati – PPERC",
+      "Code": "InfoSequia.Inkomati.PPERC",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": false,
+        "StoreInterval": "Months",
+        "AccumulationInterval": "None",
+        "Grid": {
+          "GridDefinitionId": 170
+        },
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20200104000000",
+      "EndDate": "20220525000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "InfoSequia.Inkomati",
+      "LogCollectionId": 488
+    },
+    "InfoSequia.Inkomati.VH": {
+      "Name": "InfoSequia Inkomati – Vegetation Health",
+      "Code": "InfoSequia.Inkomati.VH",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "DeflateLevel": 5,
+        "StoreInterval": "Months",
+        "SplitByVariable": true,
+        "AccumulationInterval": "None",
+        "Grid": {
+          "GridDefinitionId": 156,
+          "Pyramid": {
+            "MaxPixelCount": 100000,
+            "PreferredPixelCount": 100000,
+            "Interpolation": "Median"
+          }
+        },
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1.0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0.0
+        }
+      },
+      "StartDate": "20200105000000",
+      "EndDate": "20220526000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "InfoSequia.Inkomati",
+      "LogCollectionId": 493
+    },
+    "Fao.Wapor.SouthAfrica": {
+      "Name": "FAO WaPOR AETI South-Africa",
+      "Description": "Configured by MAL",
+      "Code": "Fao.Wapor.SouthAfrica",
+      "Settings": {
+        "StoreInterval": "Months",
+        "AccumulationInterval": "None",
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "DeflateLevel": 5,
+        "Time": {
+          "Interval": {
+            "Type": "Months",
+            "Value": 1
+          }
+        },
+        "Grid": {
+          "GridDefinitionId": 163,
+          "Pyramid": {
+            "MaxPixelCount": 80000,
+            "PreferredPixelCount": 80000,
+            "Interpolation": "Average"
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0
+        },
+        "FileFormatId": 3
+      },
+      "StartDate": "20100101000000",
+      "EndDate": "20220701000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Fao.Wapor",
+      "LogCollectionId": 507
+    },
+    "Fao.Wapor.Mozambique": {
+      "Name": "FAO WaPOR AETI Mozambique",
+      "Description": "Configured by MAL",
+      "Code": "Fao.Wapor.Mozambique",
+      "Settings": {
+        "StoreInterval": "Months",
+        "AccumulationInterval": "None",
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "DeflateLevel": 5,
+        "Time": {
+          "Interval": {
+            "Type": "Months",
+            "Value": 1
+          }
+        },
+        "Grid": {
+          "GridDefinitionId": 164,
+          "Pyramid": {
+            "MaxPixelCount": 80000,
+            "PreferredPixelCount": 80000,
+            "Interpolation": "Average"
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0
+        },
+        "FileFormatId": 3
+      },
+      "StartDate": "20100101000000",
+      "EndDate": "20220701000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Fao.Wapor",
+      "LogCollectionId": 508
+    },
+    "Fao.Wapor.Kenya.Uganda": {
+      "Name": "FAO WaPOR AETI Kenya and Uganda",
+      "Description": "Configured by MAL",
+      "Code": "Fao.Wapor.Kenya.Uganda",
+      "Settings": {
+        "StoreInterval": "Months",
+        "AccumulationInterval": "None",
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "DeflateLevel": 5,
+        "Time": {
+          "Interval": {
+            "Type": "Months",
+            "Value": 1
+          }
+        },
+        "Grid": {
+          "GridDefinitionId": 165,
+          "Pyramid": {
+            "MaxPixelCount": 80000,
+            "PreferredPixelCount": 80000,
+            "Interpolation": "Average"
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0
+        },
+        "FileFormatId": 3
+      },
+      "StartDate": "20100101000000",
+      "EndDate": "20220701000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Fao.Wapor",
+      "LogCollectionId": 509
+    },
+    "Fao.Wapor.Ghana": {
+      "Name": "FAO WaPOR AETI Ghana",
+      "Description": "Configured by MAL",
+      "Code": "Fao.Wapor.Ghana",
+      "Settings": {
+        "StoreInterval": "Months",
+        "AccumulationInterval": "Years",
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "DeflateLevel": 5,
+        "Time": {
+          "Interval": {
+            "Type": "Months",
+            "Value": 1
+          }
+        },
+        "Grid": {
+          "GridDefinitionId": 162,
+          "Pyramid": {
+            "MaxPixelCount": 80000,
+            "PreferredPixelCount": 80000,
+            "Interpolation": "Average"
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0
+        },
+        "FileFormatId": 3
+      },
+      "StartDate": "20100101000000",
+      "EndDate": "20220701000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Fao.Wapor",
+      "LogCollectionId": 510
+    },
+    "Twiga.Bui": {
+      "Name": "TWIGA Bui Waterlevels",
+      "Description": "Bui dam Ghana",
+      "Code": "Twiga.Bui",
+      "Settings": {
+        "Time": {
+          "Interval": {
+            "Type": "None",
+            "Value": 0
+          }
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0
+        }
+      },
+      "StartDate": "20210709182629",
+      "EndDate": "20210907182633",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "TimeSeries",
+      "DataProviderAssemblyId": 28,
+      "DataSourceGroupCode": "Twiga.Bui",
+      "LogCollectionId": 543
+    },
+    "Gnss.Maps.SouthAfrica": {
+      "Name": "GNSS ZTD Maps South-Africa",
+      "Description": "Water Vapor Maps South-Africa",
+      "Code": "Gnss.Maps.SouthAfrica",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "StoreInterval": "Days",
+        "AccumulationInterval": "None",
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1
+          }
+        },
+        "Grid": {
+          "GridDefinitionId": 191
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0
+        }
+      },
+      "StartDate": "20180213000000",
+      "EndDate": "20180402000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Gnss.Maps",
+      "LogCollectionId": 5547
+    },
+    "Gnss.Maps.Uganda": {
+      "Name": "GNSS ZTD Maps Uganda",
+      "Description": "Water Vapor Maps Uganda",
+      "Code": "Gnss.Maps.Uganda",
+      "Settings": {
+        "ChunkSizeX": 25,
+        "ChunkSizeY": 25,
+        "ChunkSizeTime": 1,
+        "Compression": true,
+        "StoreInterval": "Days",
+        "AccumulationInterval": "None",
+        "FileFormatId": 3,
+        "Time": {
+          "Interval": {
+            "Type": "Days",
+            "Value": 1
+          }
+        },
+        "Grid": {
+          "GridDefinitionId": 192
+        },
+        "MaximumDelay": {
+          "Type": "None",
+          "Value": 0
+        }
+      },
+      "StartDate": "20210215000000",
+      "EndDate": "20210323000000",
+      "IsEnabled": true,
+      "AutoConnectVariables": false,
+      "TimeZoneOffset": "+0000",
+      "PrimaryStructureType": "Grid",
+      "DataProviderAssemblyId": 11,
+      "DataSourceGroupCode": "Gnss.Maps",
+      "LogCollectionId": 5548
+    }
+  },
+  "Assemblies": {
+    "11": {
+      "AssemblyId": 11,
+      "AssemblyName": "HydroNET.Server.Stores.NetCDF4",
+      "Name": "NetCDF 4 Store",
+      "AssemblyTypeIds": []
+    },
+    "21": {
+      "AssemblyId": 21,
+      "AssemblyName": "HydroNET.Server.Stores.Shapefile",
+      "Name": "Shapefile Store",
+      "AssemblyTypeIds": []
+    },
+    "28": {
+      "AssemblyId": 28,
+      "AssemblyName": "HydroNET.Server.Stores.MySqlTimeSeries",
+      "Name": "Binary Timeseries Store (Previously named: MySQLTimeSeriesStore)",
+      "AssemblyTypeIds": []
+    },
+    "71": {
+      "AssemblyId": 71,
+      "AssemblyName": "HydroNET.Server.Connectors.HydroNET4.Instance",
+      "Name": "HydroNET Server Connector",
+      "AssemblyTypeIds": []
+    }
+  },
+  "DataSourceGroups": {
+    "Saws.Unified": {
+      "Code": "Saws.Unified",
+      "OwnerOrganisationId": 1,
+      "Name": "Unified model delivered by SAWS",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "HydroNet.ShapeFiles": {
+      "Code": "HydroNet.ShapeFiles",
+      "OwnerOrganisationId": 1,
+      "Name": "General shape file data source group",
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Noaa": {
+      "Code": "Noaa",
+      "OwnerOrganisationId": 1,
+      "Name": "Noaa",
+      "Description": "National Oceanic and Atmospheric Administration",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Saws.Timeseries": {
+      "Code": "Saws.Timeseries",
+      "OwnerOrganisationId": 1,
+      "Name": "Gauge network of SAWS",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Twiga.MapYourCrop": {
+      "Code": "Twiga.MapYourCrop",
+      "OwnerOrganisationId": 0,
+      "Name": "TWIGA MapYourCrop (FutureWater)",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Twiga.Vegmon": {
+      "Code": "Twiga.Vegmon",
+      "OwnerOrganisationId": 1,
+      "Name": "TWIGA VegMon",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Twiga.MapYourCrop.Mozambique": {
+      "Code": "Twiga.MapYourCrop.Mozambique",
+      "OwnerOrganisationId": 0,
+      "Name": "TWIGA MapYourCrop Mozambique (FutureWater)",
+      "ProjectionId": 18,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Tahmo.Stations": {
+      "Code": "Tahmo.Stations",
+      "OwnerOrganisationId": 0,
+      "Name": "Tahmo API",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Gnss.Stations": {
+      "Code": "Gnss.Stations",
+      "OwnerOrganisationId": 0,
+      "Name": "GNSS water vapor monitoring stations (TWIGA)",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Saws.Satellite": {
+      "Code": "Saws.Satellite",
+      "OwnerOrganisationId": 1,
+      "Name": "SAWS Satellite product (TWIGA)",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Dam.Waterbalance": {
+      "Code": "Dam.Waterbalance",
+      "OwnerOrganisationId": 1,
+      "Name": "IUCMA Dam Filling Service (TWIGA)",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Distro.Stations": {
+      "Code": "Distro.Stations",
+      "OwnerOrganisationId": 0,
+      "Name": "Strathmore data distribution",
+      "Description": "Strathmore (TWIGA Project)",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Myc.TimeSeries": {
+      "Code": "Myc.TimeSeries",
+      "OwnerOrganisationId": 0,
+      "Name": "TWIGA MapYourCrop Mozambique (FutureWater)",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Twiga.Starlab.SoilMoisture": {
+      "Code": "Twiga.Starlab.SoilMoisture",
+      "OwnerOrganisationId": 0,
+      "Name": "TWIGA Starlab Soil Moisture Grids Tamale Ghana",
+      "ProjectionId": 75,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Icon.Africa": {
+      "Code": "Icon.Africa",
+      "OwnerOrganisationId": 0,
+      "Name": "TWIGA Icon NWP for Africa",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "InfoSequia.Inkomati": {
+      "Code": "InfoSequia.Inkomati",
+      "OwnerOrganisationId": 0,
+      "Name": "InfoSequia Inkomati",
+      "Description": "InfoSequia Inkomati",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Fao.Wapor": {
+      "Code": "Fao.Wapor",
+      "OwnerOrganisationId": 0,
+      "Name": "FAO WaPOR",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Twiga.Bui": {
+      "Code": "Twiga.Bui",
+      "OwnerOrganisationId": 0,
+      "Name": "TWIGA water levels for Bui dam in Ghana",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    },
+    "Gnss.Maps": {
+      "Code": "Gnss.Maps",
+      "OwnerOrganisationId": 0,
+      "Name": "GNSS water vapor maps (TWIGA)",
+      "ProjectionId": 3,
+      "Settings": {
+        "LocationsSource": "HydroNet"
+      }
+    }
+  },
+  "TimeZoneOffset": "+0000"
+}
